@@ -1,0 +1,4 @@
+<textarea><b>Doctor:</b> </textarea><%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor) %>
+<br />
+
+<textarea><b>Patient:</b></textarea> <%= link_to @appointment.patient.name, patient_path(@appointment.patient)%>
