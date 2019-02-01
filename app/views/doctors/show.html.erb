@@ -1,0 +1,7 @@
+<% @doctor.appointments.each do |appointment| %>
+  <%=Time.parse(appointment.appointment_datetime).strftime("%B %d, %Y at %H:%M")%>
+<% end %>
+<% @doctor.patients.each do |patient| %>
+  <%=link_to patient.name,patient_path(patient) %>
+<% end %>
+	Virus-free. www.avg.com
